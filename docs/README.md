@@ -253,6 +253,31 @@ This shorthand lets you set width and height in one go.
 }
 ```
 
+## Font-face
+This function lets you add custom font faces and use it in font-family property.
+
+```stylus
+$fontpath = '/assets/fonts'
+font-face(Expletus Sans, ExpletusSans-Regular, Expletus_Sans)
+font-face(Expletus Sans, ExpletusSans-BoldItalic, Expletus_Sans, bold, italic)
+```
+where arguments are: font name, filename, folder name, font weight (optional), font style (optional).
+`$fontpath` is a variable to define path to fonts folder. It has default value of '.'.
+```css
+@font-face {
+  font-family: Expletus Sans;
+  font-weight: 400;
+  font-style: normal;
+  src: local('☺'), url("/assets/fonts/Expletus_Sans/ExpletusSans-Regular.woff2") format('woff2'), url("/assets/fonts/Expletus_Sans/ExpletusSans-Regular.woff") format('woff'), url("/assets/fonts/Expletus_Sans/ExpletusSans-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: Expletus Sans;
+  font-weight: bold;
+  font-style: italic;
+  src: local('☺'), url("/assets/fonts/Expletus_Sans/ExpletusSans-BoldItalic.woff2") format('woff2'), url("/assets/fonts/Expletus_Sans/ExpletusSans-BoldItalic.woff") format('woff'), url("/assets/fonts/Expletus_Sans/ExpletusSans-BoldItalic.ttf") format('truetype');
+}
+```
+
 ## Transparent Mixins
 These mixins expand vendor prefixes but do not modify the behavior of the property.
 
