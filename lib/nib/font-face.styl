@@ -1,0 +1,10 @@
+font-face($name, $file, $style, $weight)
+	$fontpath ?= '.'
+	@font-face
+		font-family $name
+		font-style $style
+		font-weight $weight
+		src local('☺')
+			url($fontpath/$file\.woff2) format('woff2'),
+			url($fontpath/$file\.woff) format('woff'),
+			url($fontpath/$file\.ttf) format('truetype')
