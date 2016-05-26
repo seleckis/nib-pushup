@@ -238,12 +238,12 @@ Creates a text outline using text-shadow.
 }
 ```
 
-## Size
+## Sizes
 This shorthand lets you set width and height in one go.
 
 ```stylus
 .foo
-  size 5em 10em
+  sizes 5em 10em
 ```
 
 ```css
