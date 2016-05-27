@@ -1,7 +1,10 @@
+/*
+ * Font-face generator
+ */
 font-face($name, $file, $path = '', $weight = normal, $style = normal)
-	$fontpath ?= '.'
+	$fontpath ?= './'
 	@font-face
 		font-family $name
 		font-weight $weight
 		font-style $style
-		src local('☺'), url($fontpath/$path/$file\.woff) format('woff')
+		src: local('☺'), url($fontpath+$path+$file\.woff) format('woff')
