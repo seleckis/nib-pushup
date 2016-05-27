@@ -1,44 +1,4 @@
 # Mixins
-## Gradient
-Nib's gradient support is by far the largest feature it provides. Not only is the syntax extremely similar to what you would normally write, it's more forgiving, expands to vendor equivalents, and can even produce a PNG for older browsers with [node-canvas](http://github.com/learnboost/node-canvas).
-
-```stylus
-body
-  background linear-gradient(top, white, black)
-```
-
-```css
-body {
-  background: -webkit-linear-gradient(top, #fff, #000);
-  background: -moz-linear-gradient(top, #fff, #000);
-  background: -o-linear-gradient(top, #fff, #000);
-  background: -ms-linear-gradient(top, #fff, #000);
-  background: linear-gradient(to bottom, #fff, #000);
-}
-```
-
-![](http://f.cl.ly/items/1q25061X2Q2U0p472L02/Screenshot.png)
-
-Any number of color stops may be provided:
-
-```stylus
-body
-  background linear-gradient(bottom left, white, red, blue, black)
-```
-
-![](http://f.cl.ly/items/2I0k3D0A2y0n3i443g2W/Screenshot.png)
-
-Units may be placed before or after the color:
-
-```stylus
-body
-  background linear-gradient(left, 80% red, #000)
-  background linear-gradient(top, #eee, 90% white, 10% black)
-```
-
-![](http://f.cl.ly/items/2B1U3m0t2T1B420I3C3I/Screenshot.png)
-![](http://f.cl.ly/items/1T1P1x0n1X3k132o3V0F/Screenshot.png)
-
 ## Position
 
 The position mixins `absolute`, `fixed`, and `relative` provide a shorthand variant to what is otherwise three CSS properties. The syntax is as follows:
@@ -277,65 +237,6 @@ where arguments are: font name, filename, folder name, font weight (optional), f
   src: local('☺'), url("/assets/fonts/Expletus_Sans/ExpletusSans-BoldItalic.woff2") format('woff2'), url("/assets/fonts/Expletus_Sans/ExpletusSans-BoldItalic.woff") format('woff'), url("/assets/fonts/Expletus_Sans/ExpletusSans-BoldItalic.ttf") format('truetype');
 }
 ```
-
-## Transparent Mixins
-These mixins expand vendor prefixes but do not modify the behavior of the property.
-
-For example:
-
-```stylus
-*
-  box-sizing border-box
-```
-
-```css
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-```
-
-Here is the full list of properties for which Nib provides transparent mixins:
-
-- box-shadow
-- radial-gradient
-- user-select
-- column-count
-- column-gap
-- column-rule
-- column-rule-color
-- column-rule-width
-- column-rule-style
-- column-width
-- background-size
-- transform
-- border-image
-- transition
-- transition-property
-- transition-duration
-- transition-timing-function
-- transition-delay
-- backface-visibility
-- opacity
-- box-sizing
-- box-orient
-- box-flex
-- box-flex-group
-- box-align
-- box-pack
-- box-direction
-- animation
-- animation-name
-- animation-duration
-- animation-delay
-- animation-direction
-- animation-iteration-count
-- animation-timing-function
-- animation-play-state
-- animation-fill-mode
-- hyphens
-- appearance
 
 # Aliases
 These aliases are provided purely for convenience.
