@@ -7,8 +7,23 @@
     "type": "git",
     "url": "git://github.com/seleckis/nib-pushup.git"
   },
-  "dependencies": {
-    "stylus": "0.49.x"
+  "keywords": [
+    "nib",
+    "css",
+    "stylus",
+    "mixins",
+    "utilities"
+  ],
+  "devDependencies": {
+    "normalize-styl-lite": "0.0.7",
+    "stylus": "^0.54.5"
   },
-  "author": "Nikita Seleckis <nikita@seleckis.lv>"
+  "author": "Nikita Seleckis <nikita@seleckis.lv>",
+  "bugs": {
+    "url": "https://github.com/seleckis/nib-pushup/issues"
+  },
+  "homepage": "https://github.com/seleckis/nib-pushup",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
