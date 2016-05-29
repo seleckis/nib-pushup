@@ -5,7 +5,7 @@
 Stylus mixins, utilities and components.
 This is a fork of [nib](https://github.com/tj/nib), which has been updated to fit modern needs.
 
-**Note:** Gradient generator and transparent mixins have been removed. Use Autoprefixer instead as a [part of PostCSS](https://github.com/postcss/autoprefixer) or as a [Stylus Plugin](https://www.npmjs.com/package/autoprefixer-stylus).
+**Note:** Gradient generator and transparent mixins have been removed. Use Autoprefixer instead as a [part of PostCSS](https://github.com/postcss/autoprefixer) or as a [Stylus Plugin](https://www.npmjs.com/package/autoprefixer-stylus). Normalize mixins have been removed also, you can use [normalize-styl-lite](https://www.npmjs.com/package/normalize-styl-lite) instead.
 
 ## Installation
 
@@ -23,10 +23,10 @@ To gain access to everything nib-pushup has to offer, simply add:
 @import 'nib-pushup'
 ```
 
-Or you may also pick and choose based on the directory structure in `./lib`, for example:
+Or you may also pick and choose based on the directory structure in `nib-pushup` folder, for example:
 
 ```stylus
-@import 'nib-pushup/gradients'
-@import 'nib-pushup/overflow'
-@import 'nib-pushup/normalize'
+@import 'nib-pushup/clearfix'
+@import 'nib-pushup/font-face'
+@import 'nib-pushup/positions'
 ```
