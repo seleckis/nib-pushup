@@ -1,0 +1,68 @@
+@import '../nib-pushup'
+@import '../node_modules/normalize-styl-lite/normalize'
+
+/*
+ * Basic stylus
+ */
+
+*
+    box-sizing border-box
+body
+    margin 0
+    overflow hidden
+    overflow-y auto
+    padding-bottom 400px /* for fixed block */
+.root
+    margin 5vh 10vw
+    overflow hidden
+.example
+    margin 2vh 0
+    &__head
+        padding 1vh 0
+    &__body
+        padding 3vh 2vw
+        background-color #ddd
+        min-height 10vh
+
+/* overflow ellipsis */
+.overflow-ellipsis
+    overflow ellipsis
+
+/* replace-text */
+.replace-text
+    replace-text(url('assets/img/lorem.jpg'), { repeat: no-repeat, pos: center top, size: cover })
+
+/* shadow-stroke */
+.shadow-stroke
+    shadow-stroke(red)
+
+/* border */
+.border
+    border red !important
+
+.floated
+    width 25%
+    float left
+    padding 0 1vw
+    @media (max-width:640px)
+        width 50%
+.clearfix
+    clearfix()
+    margin 0 -1vw
+
+$fontpath = 'https://fonts.gstatic.com/s/expletussans/v9/'
+font-face(ExpletusSans, gegTSDBDs5le3g6uxU1ZsXt9r5m2YmP5sw3cUAQwL0E)
+font-face(ExpletusSansBoldItalic, sRBNtc46w65uJE451UYmW8PyqN-ucfDDCRJHsPzxxN0, '', bold, italic)
+
+.font-face
+    h3
+        font italic bold 32px "ExpletusSansBoldItalic", sans-serif
+    p
+        font-family "ExpletusSans", sans-serif
+
+.fixed
+    fixed bottom 10px right 10px
+    width 250px
+
+.sizes
+    sizes 260px 40vh
