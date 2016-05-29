@@ -1,0 +1,11 @@
+shadow-stroke(n)
+    text-shadow: -1px -1px 0 n, 1px -1px 0 n, -1px 1px 0 n, 1px 1px 0 n
+    // TODO:
+    /*  WebKit (Safari/Chrome) Only */
+    // -webkit-text-stroke: 1px n
+    /*  If we weren't using text-shadow, we'd set a fallback color
+        and use this to set color instead -webkit-text-fill-color: white
+         */
+    // color: white
+    // And add improved shadow stroke https://www.petercarrero.com/examples/stroke/
+    // https://css-tricks.com/almanac/properties/t/text-stroke/
