@@ -1,0 +1,18 @@
+/*
+ * The Magnificent Micro Clearfix
+ *
+ * Useful for clearing floats without structural markup.
+ * Prevents margin-collapsing on child elements in most cases.
+ *
+ * See http://nicolasgallagher.com/micro-clearfix-hack/
+ * and http://j.mp/bestclearfix
+ *
+ */
+
+clearfix()
+  &:before
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
