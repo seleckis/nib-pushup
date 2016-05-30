@@ -164,13 +164,18 @@ where arguments are: *font name, filename, folder name (optional, default = ''),
 
 ## Font-size with line-height
 
-It is useful to define line-height with font-size together.
+It is useful to define line-height with font-size together. Of course you can use font-size as usual, withour line-height.
 
 ```stylus
+body
+    font-size: 16px
 p
     font-size: 18px/1.5
 ```
 ```css
+body {
+    font-size: 16px;
+}
 p {
     font-size: 18px;
     line-height: 1.5;
