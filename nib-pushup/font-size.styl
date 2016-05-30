@@ -1,0 +1,18 @@
+/*
+ * Use font-size with line-height
+ *
+ * p
+ *   font-size 16px/1.5
+ *
+ * produces
+ *
+ * p {
+ *   font-size: 16px;
+ *   line-height: 1.5;
+ * }
+ *
+ */
+font-size(args...)
+	a = split("/", '' + args)
+	font-size: unquote(a[0])
+	line-height: unquote(a[1]) if a[1]

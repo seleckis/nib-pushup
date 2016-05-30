@@ -162,7 +162,22 @@ where arguments are: *font name, filename, folder name (optional, default = ''),
 }
 ```
 
-## Removed mixins and utilities
+## Font-size with line-height
+
+It is useful to define line-height with font-size together.
+
+```stylus
+p
+    font-size: 18px/1.5
+```
+```css
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+```
+
+# Removed mixins and utilities
 Here is the list of mixins and utilities from original nib removed from nib-pushup.
 
 - Gradient — use standard syntax with [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer) or [autoprefixer-stylus](https://www.npmjs.com/package/autoprefixer-stylus) plugin instead.
