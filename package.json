@@ -15,6 +15,7 @@
     "utilities"
   ],
   "devDependencies": {
+    "ava": "^0.15.1",
     "normalize-styl-lite": "0.0.7",
     "stylus": "^0.54.5"
   },
@@ -24,6 +25,6 @@
   },
   "homepage": "https://github.com/seleckis/nib-pushup",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   }
 }
