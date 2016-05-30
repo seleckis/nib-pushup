@@ -13,6 +13,10 @@
  *
  */
 font-size(args...)
-	a = split("/", '' + args)
-	font-size: unquote(a[0])
+	args = '' + args
+	comments_pattern = "\/\*.+\*\/"
+	comments = match(comments_pattern, args)
+	args2 = replace(comments_pattern, unquote(''), args)
+	a = split("/", args2)
+	font-size: unquote(a[0]) + unquote(comments || '')
 	line-height: unquote(a[1]) if a[1]
