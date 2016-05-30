@@ -15,8 +15,6 @@ $ npm install nib-pushup --save-dev
 
 ## Usage
 
-### In Stylus
-
 To gain access to everything nib-pushup has to offer, simply add:
 
 ```stylus
@@ -30,3 +28,5 @@ Or you may also pick and choose based on the directory structure in `nib-pushup`
 @import 'nib-pushup/font-face'
 @import 'nib-pushup/positions'
 ```
+
+Read more in [documentation](docs).
