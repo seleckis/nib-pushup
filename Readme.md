@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/seleckis/nib-pushup.png?branch=master)](https://travis-ci.org/seleckis/nib-pushup)
+[![Build Status](https://travis-ci.org/seleckis/nib-pushup.png?branch=master)](https://travis-ci.org/seleckis/nib-pushup) [![npm version](https://badge.fury.io/js/nib-pushup.svg)](https://badge.fury.io/js/nib-pushup)
 
 # Nib Pushup
 
