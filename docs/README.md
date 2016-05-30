@@ -161,3 +161,14 @@ where arguments are: *font name, filename, folder name (optional, default = ''),
   src: local('☺'), url("/assets/fonts/Expletus_Sans/ExpletusSans-BoldItalic.woff") format('woff');
 }
 ```
+
+## Removed mixins and utilities
+Here is the list of mixins and utilities from original nib removed from nib-pushup.
+
+- Gradient — use standard syntax with [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer) or [autoprefixer-stylus](https://www.npmjs.com/package/autoprefixer-stylus) plugin instead.
+- Border Radius — standard `border-radius` property is useful. `border-bottom-radius` and `border-top-radius` will be added soon instead.
+- Responsive Images — There is a huge amount of modern devices which have different pixel dencity, that is why we need better solution for this. For now it is suggested to use [Rupture](https://github.com/jescalan/rupture) or native media queries instead.
+- Reset — There is no need to add snippets created by someone and follow the updates. Eric Meyer's reset is already obsolete, use normalize.css instead. But, `normalize()` has been also removed from nib-pushup, use my [normalize.styl.lite](https://github.com/seleckis/normalize.styl.lite) or [normalize.styl](https://github.com/bymathias/normalize.styl).
+- Transparent Mixins — use [PostCSS Autoprefixer](https://github.com/postcss/autoprefixer) or [autoprefixer-stylus](https://www.npmjs.com/package/autoprefixer-stylus) plugin instead.
+- Aliases — use standard syntax, it is simple.
+- Image generation and iconic — it seems the authors of Nib, does not know why they added this to Nib repository. :)
